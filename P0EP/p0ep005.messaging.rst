@@ -1,0 +1,6 @@
+Looking for a Chat app.
+
+Current options are
+
+*  Zulip - chat server
+*  http://www.kannel.org/ - SMS Gateway
