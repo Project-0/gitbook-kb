@@ -1,0 +1,16 @@
+Setting Up New Users
+====================
+
+The initial task here is to try to create an easy, repeatable process for adding new users to the system.  At the moment, I think I am just going to
+write a shell script because it's the only way I can think of to easily map out all of the settings that need changing.  As usual, we will probably
+roll this process into a Python_ library at some point.
+
+So, it really ends up being:
+
+>>>
+# useradd -G {git, developers, ...} -c "email@address.com" username
+# chage -d 0 username
+>>>
+
+But, this means that all we need to get a new user set up is for someone with admin rights to collect a desired username, email address and SSH
+public key to add to git and everything else should simply work.
