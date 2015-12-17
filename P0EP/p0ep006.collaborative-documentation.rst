@@ -1,0 +1,1 @@
+_a la_ https://github.com/ether/etherpad-lite#installation

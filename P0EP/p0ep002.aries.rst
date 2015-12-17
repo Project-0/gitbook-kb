@@ -1,0 +1,10 @@
+=============
+Project Aries
+=============
+
+Project Aries attempts to create the first iteration of the Project[0] SPA Web Application as an interface to the backend server's functionality
+
+Status
+------
+
+The project is, currently, waiting for a solution to allow the Tornado server to serve up an Angular.js application.  The solution *should* be to use ``self.write`` instead of ``self.render`` to return the HTML file without passing it through Tornado's (jinja) template processor; which should avoid the conflict with ``{{`` and ``}}`` being interpreted by both jinja and Angular.  The last tests of this, IIRC, failed, but it should be the next step.  Once we can get the GUI to even present, we can move this forward.
