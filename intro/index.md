@@ -1,3 +1,2 @@
-What is Project[0]?
-===================
+# What is Project\[0\]?
 
